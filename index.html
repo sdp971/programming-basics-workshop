@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      /**Calculator**/
+      // console.log('Hello wilders!');
+
+      // let firstValue = Number(prompt('Indique un premier chiffre :'));
+      // const operator = prompt('Indique un opérateur : ');
+      // let secondValue = Number(prompt('Indique un deuxième chiffre :'));
+
+      // console.log(firstValue);
+      // console.log(operator);
+      // console.log(secondValue);
+
+      // console.log(firstValue + operator + secondValue);
+
+      // let result = 0;
+
+      // if (operator === '+') {
+      //   result = firstValue + secondValue;
+      //   console.log(result);
+      // } else if (operator === '-') {
+      //   result = firstValue - secondValue;
+      //   console.log(result);
+      // } else if (operator === '*') {
+      //   result = firstValue * secondValue;
+      //   console.log(result);
+      // } else if (operator === '/') {
+      //   result = firstValue / secondValue;
+      //   console.log(result);
+      // } else {
+      //   console.error('Erreur : Opérateur invalide');
+      // }
+
+      
+/**Function calculator**/
+      // function calculator(firstValue, operator, secondValue) {
+      //   let result = 0;
+      //   switch (operator) {
+      //     case '+':
+      //       result = firstValue + secondValue;
+      //       console.log(result);
+      //       break;
+      //     case '-':
+      //       result = firstValue - secondValue;
+      //       console.log(result);
+      //       break;
+      //     case '*':
+      //       result = firstValue * secondValue;
+      //       console.log(result);
+      //       break;
+      //     case '/':
+      //       result = firstValue / secondValue;
+      //       console.log(result);
+      //       break;
+      //     default:
+      //       console.error('Erreur : Opérateur invalide');
+      //   }
+      // }
+
+      // calculator(firstValue, operator, secondValue);
+
+      /**The price is right**/
+
+      let name = prompt('Quel est ton prénom ? :');
+      const rightPrice = Math.ceil(Math.random() * 100);
+
+      console.log('prix à deviner : ' + rightPrice);
+
+      let number = Number(prompt('Indique un prix compris entre 1 et 100 :'));
+
+      while (number !== rightPrice) {
+        if (number > rightPrice) {
+          console.log("It's less");
+        } else if (number < rightPrice) {
+          console.log("It's more");
+        }
+        number = Number(prompt('Indique un prix compris entre 1 et 100 :'));
+      }
+
+      console.log('Bien joué tu as gagné ' + name + ' !');
+    </script>
+  </body>
+</html>
